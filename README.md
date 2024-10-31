@@ -8,38 +8,37 @@ Dans cette cheatsheet, nous allons couvrir les bases de PostgreSQL, un système 
 - [Avantages de PostgreSQL](#avantages-de-postgresql)
 - [Installation et Configuration](#installation-et-configuration)
     - [Installation de PostgreSQL](#installation-de-postgresql)
-        - Pour Windows
-        - Pour Linux
-        - Pour macOS
+        - [Pour Windows](#pour-windows-)
+        - [Pour Linux](#pour-linux-)
+        - [Pour macOS](#pour-macos-)
 - [Commandes de base](#commandes-de-base)
-    - Démarrer le serveur PostgreSQL
-    - Arrêter le serveur PostgreSQL
-    - Redémarrer le serveur PostgreSQL
-    - Se connecter à PostgreSQL
-    - Lister les bases de données
-    - Se connecter à une base de données
-    - Lister les tables
-    - Quitter PostgreSQL
+    - [Démarrer le serveur PostgreSQL](#démarrer-le-serveur-postgresql)
+    - [Arrêter le serveur PostgreSQL](#arrêter-le-serveur-postgresql)
+    - [Redémarrer le serveur PostgreSQL](#redémarrer-le-serveur-postgresql)
+    - [Se connecter à PostgreSQL](#se-connecter-à-postgresql)
+    - [Lister les bases de données](#lister-les-bases-de-données)
+    - [Se connecter à une base de données](#se-connecter-à-une-base-de-données)
+    - [Lister les tables](#lister-les-tables)
+    - [Quitter PostgreSQL](#quitter-postgresql)
 - [Commandes SQL](#commandes-sql)
     - [Bases de données](#bases-de-données)
-        - Créer une base de données
-        - Supprimer une base de données
-        - Sélectionner une base de données
+        - [Créer une base de données](#créer-une-base-de-données)
+        - [Supprimer une base de données](#supprimer-une-base-de-données)
+        - [Sélectionner une base de données](#sélectionner-une-base-de-données)
     - [Tables](#tables)
-        - Créer une table
-        - Supprimer une table
-        - Afficher les données d'une table
-        - Insérer des données dans une table
+        - [Créer une table](#créer-une-table)
+        - [Supprimer une table](#supprimer-une-table)
+        - [Afficher les données d'une table](#afficher-les-données-dune-table)
+        - [Insérer des données dans une table](#insérer-des-données-dans-une-table)
     - [Utilisateurs](#utilisateurs)
-        - Créer un utilisateur
-        - Supprimer un utilisateur
+        - [Créer un utilisateur](#créer-un-utilisateur)
+        - [Supprimer un utilisateur](#supprimer-un-utilisateur)
     - [Les rôles](#les-rôles)
-        - Créer un rôle
-        - Supprimer un rôle
-        - Attribuer un rôle à un utilisateur
-        - Retirer un rôle à un utilisateur
+        - [Créer un rôle](#creer-un-role)
+        - [Supprimer un rôle](#supprimer-un-rôle)
+        - [Attribuer un rôle à un utilisateur](#attribuer-un-rôle-à-un-utilisateur)
+        - [Retirer un rôle à un utilisateur](#retirer-un-rôle-à-un-utilisateur)
 ## Avantages de PostgreSQL
-
 | Avantage                              | Description                                                                                           |
 |---------------------------------------|-------------------------------------------------------------------------------------------------------|
 | **Meilleure prise en charge des données volumineuses et complexes** | PostgreSQL est conçu pour gérer des bases de données de grande taille et des requêtes complexes de manière efficace. |
@@ -183,15 +182,17 @@ En résumé, les cas d'utilisation courants de PostgreSQL sont les applications 
 ### Les rôles
 *Note : un rôle est un ensemble de privilèges qui peut être attribué à un utilisateur.*
 
-**Les rôles principaux** :
-- **LOGIN** : peut se connecter.
+#### Les rôles principaux et leurs droits :
+- **LOGIN** : peut se connecter à la base de données.
 - **SUPERUSER** : possède **tous** les droits.
-- **NOSUPERUSER** : ne peut pas être un superutilisateur.
+- **NOSUPERUSER** : ne peut **pas** être un superutilisateur.
 - **CREATEDB** : peut créer des bases de données.
 - **CREATEROLE** : peut créer des rôles.
 - **REPLICATION** : peut initier la réplication.
 - **BYPASSRLS** : peut ignorer les politiques de lignes de sécurité.
 
+
+#### Commandes liées aux rôles
 - **Créer un rôle :**
     ```sql
     CREATE ROLE <nom_rôle>;
@@ -208,4 +209,3 @@ En résumé, les cas d'utilisation courants de PostgreSQL sont les applications 
     ```sql
     REVOKE <nom_rôle> FROM <nom_utilisateur>;
     ```
-  
