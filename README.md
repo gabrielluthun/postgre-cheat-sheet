@@ -95,20 +95,7 @@ En résumé, les cas d'utilisation courants de PostgreSQL sont les applications 
 --- 
 ### Commandes de base
 
-*Note : pour les utilisateurs ayant installé PostgreSQL via Homebrew, `sudo` est remplacé par `brew`.*
 
-- **Démarrer le serveur PostgreSQL :**
-    ```sh
-    sudo service postgresql start
-    ```
-- **Arrêter le serveur PostgreSQL :**
-    ```sh
-    sudo service postgresql stop
-    ```
-- **Redémarrer le serveur PostgreSQL :**
-    ```sh
-    sudo service postgresql restart
-    ```
 - **Se connecter à PostgreSQL :**
     ```sh
     psql -U <nom_utilisateur>
