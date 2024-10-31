@@ -27,6 +27,9 @@ Dans cette cheatsheet, nous allons couvrir les bases de PostgreSQL, un système 
         - [Supprimer une table](#supprimer-une-table)
         - [Afficher les données d'une table](#afficher-les-données-dune-table)
         - [Insérer des données dans une table](#insérer-des-données-dans-une-table)
+    - [Colonnes de table](#colonnes-de-table)
+        - [Créer une colonne](#créer-une-colonne)
+        - [Supprimer une colonne](#supprimer-une-colonne)
     - [Utilisateurs](#utilisateurs)
         - [Créer un utilisateur](#créer-un-utilisateur)
         - [Supprimer un utilisateur](#supprimer-un-utilisateur)
@@ -150,6 +153,18 @@ En résumé, les cas d'utilisation courants de PostgreSQL sont les applications 
     ```sql
     INSERT INTO <nom_table> (<colonne1>, <colonne2>, ...) VALUES (<valeur1>, <valeur2>, ...);
     ```
+
+### Colonnes de table
+
+- **Créer une colonne :**
+    ```sql
+    ALTER TABLE <nom_table> ADD COLUMN <nom_colonne> <type_donnée>;
+    ```
+- **Supprimer une colonne :**
+    ```sql
+    ALTER TABLE <nom_table> DROP COLUMN <nom_colonne>;
+    ```
+
 ### Utilisateurs
 *Note : les utilisateurs sont des rôles ayant le privilège de se connecter à la base de données.*
 
