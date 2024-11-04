@@ -208,3 +208,101 @@ En résumé, les cas d'utilisation courants de PostgreSQL sont les applications 
     ```sql
     REVOKE <nom_rôle> FROM <nom_utilisateur>;
     ```
+
+### Commande SELECT
+- **Sélectionner toutes les colonnes d'une table :**
+    ```sql
+    SELECT * FROM <nom_table>;
+    ```
+- **Sélectionner des colonnes spécifiques d'une table :**
+    ```sql
+    SELECT <colonne1>, <colonne2>, ... FROM <nom_table>;
+    ```
+- **Sélectionner des colonnes spécifiques avec une condition :**
+    ```sql
+    SELECT <colonne1>, <colonne2>, ... 
+    FROM <nom_table> 
+    WHERE <condition>;
+    ```
+- **Faire un tri pour les résultats :**
+    ```sql
+    SELECT <colonne1>, <colonne2>, ...
+    FROM <nom_table>
+    ORDER BY <colonne>;
+    ```
+
+### Commande ALTER
+- **Modifier le type d'une colonne :**
+    ```sql
+    ALTER TABLE <nom_table> 
+    ALTER COLUMN <nom_colonne> 
+    TYPE <nouveau_type>;
+    ```
+- **Renommer une colonne :**
+    ```sql 
+    ALTER TABLE <nom_table>
+    RENAME COLUMN <nom_colonne> TO <nouveau_nom>;
+    ```
+- **Renommer une table :**
+    ```sql
+    ALTER TABLE <nom_table> RENAME TO <nouveau_nom>;
+    ```
+### Contraintes SQL
+- **Contrainte NOT NULL :**
+Elle garantit qu'une colonne ne peut pas avoir de valeur NULL.
+    ```sql
+    CREATE TABLE <nom_table> (
+        <nom_colonne> <type_donnée> NOT NULL,
+        ...
+    );
+    ```
+
+- **Contrainte UNIQUE :**
+Elle garantit que toutes les valeurs d'une colonne sont uniques.
+    ```sql
+    CREATE TABLE <nom_table> (
+        <nom_colonne> <type_donnée> UNIQUE,
+        ...
+    );
+    ```
+- **Contrainte PRIMARY KEY :**
+Elle combine les contraintes NOT NULL et UNIQUE pour créer une clé primaire.
+Elle est utilisée pour identifier de manière unique chaque enregistrement dans une table.
+
+    ```sql
+    CREATE TABLE <nom_table> (
+        <nom_colonne> <type_donnée> PRIMARY KEY,
+        ...
+    );
+    ```
+
+- **Contrainte FOREIGN KEY :**
+Elle est utilisée pour garantir l'intégrité référentielle entre deux tables. 
+Elle fait référence à une colonne d'une autre table.
+
+    ```sql
+    CREATE TABLE <nom_table1> (
+        <nom_colonne> <type_donnée> REFERENCES <nom_table2>(<nom_colonne>),
+        ...
+    );
+    ```
+
+- **Contrainte CHECK :**
+Elle est utilisée pour garantir qu'une colonne respecte une condition spécifique.
+
+    ```sql
+    CREATE TABLE <nom_table> (
+        <nom_colonne> <type_donnée> CHECK (<condition>),
+        ...
+    );
+    ```
+
+**Contrainte DEFAULT :**
+Elle est utilisée pour spécifier une valeur par défaut pour une colonne.
+
+    ```sql
+    CREATE TABLE <nom_table> (
+        <nom_colonne> <type_donnée> DEFAULT <valeur>,
+        ...
+    );
+    ```
