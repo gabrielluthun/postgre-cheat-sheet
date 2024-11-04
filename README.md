@@ -2,15 +2,19 @@
 
 Dans cette cheatsheet, nous allons couvrir les bases de PostgreSQL, un système de gestion de base de données relationnelle open-source.
 
+# Cheatsheet PostgreSQL
+
+Dans cette cheatsheet, nous allons couvrir les bases de PostgreSQL, un système de gestion de base de données relationnelle open-source.
+
 ## Table des matières :
 
 - [Différences entre MySQL et PostgreSQL](#différences-entre-mysql-et-postgresql)
 - [Avantages de PostgreSQL](#avantages-de-postgresql)
 - [Installation et Configuration](#installation-et-configuration)
     - [Installation de PostgreSQL](#installation-de-postgresql)
-        - [Pour Windows](#pour-windows-)
-        - [Pour Linux](#pour-linux-)
-        - [Pour macOS](#pour-macos-)
+        - [Pour Windows](#pour-windows)
+        - [Pour Linux](#pour-linux)
+        - [Pour macOS](#pour-macos)
 - [Commandes de base](#commandes-de-base)
     - [Se connecter à PostgreSQL](#se-connecter-à-postgresql)
     - [Lister les bases de données](#lister-les-bases-de-données)
@@ -34,10 +38,26 @@ Dans cette cheatsheet, nous allons couvrir les bases de PostgreSQL, un système 
         - [Créer un utilisateur](#créer-un-utilisateur)
         - [Supprimer un utilisateur](#supprimer-un-utilisateur)
     - [Les rôles](#les-rôles)
-        - [Créer un rôle](#creer-un-role)
+        - [Créer un rôle](#créer-un-rôle)
         - [Supprimer un rôle](#supprimer-un-rôle)
         - [Attribuer un rôle à un utilisateur](#attribuer-un-rôle-à-un-utilisateur)
         - [Retirer un rôle à un utilisateur](#retirer-un-rôle-à-un-utilisateur)
+    - [Commande SELECT](#commande-select)
+        - [Sélectionner toutes les colonnes d'une table](#sélectionner-toutes-les-colonnes-dune-table)
+        - [Sélectionner des colonnes spécifiques d'une table](#sélectionner-des-colonnes-spécifiques-dune-table)
+        - [Sélectionner des colonnes spécifiques avec une condition](#sélectionner-des-colonnes-spécifiques-avec-une-condition)
+        - [Faire un tri pour les résultats](#faire-un-tri-pour-les-résultats)
+    - [Commande ALTER](#commande-alter)
+        - [Modifier le type d'une colonne](#modifier-le-type-dune-colonne)
+        - [Renommer une colonne](#renommer-une-colonne)
+        - [Renommer une table](#renommer-une-table)
+    - [Contraintes SQL](#contraintes-sql)
+        - [Contrainte NOT NULL](#contrainte-not-null)
+        - [Contrainte UNIQUE](#contrainte-unique)
+        - [Contrainte PRIMARY KEY](#contrainte-primary-key)
+        - [Contrainte FOREIGN KEY](#contrainte-foreign-key)
+        - [Contrainte CHECK](#contrainte-check)
+        - [Contrainte DEFAULT](#contrainte-default)
 ## Avantages de PostgreSQL
 | Avantage                              | Description                                                                                           |
 |---------------------------------------|-------------------------------------------------------------------------------------------------------|
