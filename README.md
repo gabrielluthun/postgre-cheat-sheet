@@ -2,9 +2,7 @@
 
 Dans cette cheatsheet, nous allons couvrir les bases de PostgreSQL, un système de gestion de base de données relationnelle open-source.
 
-# Cheatsheet PostgreSQL
-
-Dans cette cheatsheet, nous allons couvrir les bases de PostgreSQL, un système de gestion de base de données relationnelle open-source.
+Des commandes SQL seront également incluses pour vous aider à créer et gérer des bases de données, des tables, des colonnes, des utilisateurs, des rôles, et des contraintes.
 
 ## Table des matières :
 
