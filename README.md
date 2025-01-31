@@ -36,26 +36,10 @@ Des commandes SQL seront également incluses pour vous aider à créer et gérer
         - [Créer un utilisateur](#créer-un-utilisateur)
         - [Supprimer un utilisateur](#supprimer-un-utilisateur)
     - [Les rôles](#les-rôles)
-        - [Créer un rôle](#créer-un-rôle)
-        - [Supprimer un rôle](#supprimer-un-rôle)
-        - [Attribuer un rôle à un utilisateur](#attribuer-un-rôle-à-un-utilisateur)
-        - [Retirer un rôle à un utilisateur](#retirer-un-rôle-à-un-utilisateur)
     - [Commande SELECT](#commande-select)
-        - [Sélectionner toutes les colonnes d'une table](#sélectionner-toutes-les-colonnes-dune-table)
-        - [Sélectionner des colonnes spécifiques d'une table](#sélectionner-des-colonnes-spécifiques-dune-table)
-        - [Sélectionner des colonnes spécifiques avec une condition](#sélectionner-des-colonnes-spécifiques-avec-une-condition)
-        - [Faire un tri pour les résultats](#faire-un-tri-pour-les-résultats)
     - [Commande ALTER](#commande-alter)
-        - [Modifier le type d'une colonne](#modifier-le-type-dune-colonne)
-        - [Renommer une colonne](#renommer-une-colonne)
-        - [Renommer une table](#renommer-une-table)
     - [Contraintes SQL](#contraintes-sql)
-        - [Contrainte NOT NULL](#contrainte-not-null)
-        - [Contrainte UNIQUE](#contrainte-unique)
-        - [Contrainte PRIMARY KEY](#contrainte-primary-key)
-        - [Contrainte FOREIGN KEY](#contrainte-foreign-key)
-        - [Contrainte CHECK](#contrainte-check)
-        - [Contrainte DEFAULT](#contrainte-default)
+    
 ## Avantages de PostgreSQL
 | Avantage                              | Description                                                                                           |
 |---------------------------------------|-------------------------------------------------------------------------------------------------------|
