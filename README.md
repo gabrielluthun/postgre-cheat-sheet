@@ -8,10 +8,7 @@ Des commandes SQL seront également incluses pour vous aider à créer et gérer
 
 - [Différences entre MySQL et PostgreSQL](#différences-entre-mysql-et-postgresql)
 - [Avantages de PostgreSQL](#avantages-de-postgresql)
-- [Installation et Configuration](#installation-et-configuration)
-        - [Pour Windows](#pour-windows)
-        - [Pour Linux](#pour-linux)
-        - [Pour macOS](#pour-macos)
+- [Installation et Configuration](#installation-et-configuration)  
 - [Commandes de base](#commandes-de-base)
 - [Commandes SQL](#commandes-sql)
 
